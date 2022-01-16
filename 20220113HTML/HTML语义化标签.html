@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header,footer{
+            width: 100%;
+            height: 50px;
+            background-color: orange;
+        }
+        html,body{
+            height: 100%;
+        }
+        section{
+            width: 100%;
+            height: calc(100% - 100px);
+            background-color: white;
+        }
+        nav,aside{
+            width: 100px;
+            height: 100%;
+            background-color: #ccc;
+            float: left;
+        }
+        main{
+            width: calc(100% - 200px);
+            height: 100%;
+            background-color: white;
+            float: left;
+        }
+        .article1{
+            width: 100%;
+            height: 60%;
+        }
+        .article2{
+            width: 100%;
+            height: 40%;
+        }
+    </style>
+</head>
+<body>
+    <header>head</header>
+    <section>
+        <nav>
+            <figure>nav</figure>
+            <ul>
+                <li>1111</li>
+                <li>222</li>
+                <li>333</li>
+            </ul>
+        </nav>
+        <main>
+            <article class="article1">
+                <header>aaaa</header>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat corrupti a ullam et optio maxime ad consectetur iusto adipisci. Voluptatibus omnis fugit, quae ipsum aperiam pariatur officiis est expedita itaque?</p>
+                <footer>bbbb</footer>
+            </article>
+            <article class="article2">
+                <header>aaaa</header>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat corrupti a ullam et optio maxime ad consectetur iusto adipisci. Voluptatibus omnis fugit, quae ipsum aperiam pariatur officiis est expedita itaque?</p>
+                <footer>bbbb</footer>
+            </article>
+        </main>
+        <aside>
+            <figure>aside</figure>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga et distinctio id soluta voluptate ex harum magnam? Tenetur obcaecati vitae deleniti ab! Magnam nihil dolore asperiores vitae ducimus eligendi a!</p>
+        </aside>
+    </section>
+    <footer>foot</footer>
+</body>
+</html>

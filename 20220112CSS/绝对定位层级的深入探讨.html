@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        父子关系的盒子，层级可以在子盒子上变为负数，使父盒子盖住子盒子
+        兄弟关系的盒子绝对定位可以改变z-index的数值改变层级关系
+        */
+        .box1{
+            width: 500px;
+            height: 300px;
+            background-color: yellow;
+            position: relative;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top:30px;
+            left: 50px;
+            z-index: -1;
+        }
+        /* span原来是行内元素，可以转变为块元素，方法包括：
+        1.display:block;
+        2.position:absolute;
+        3.float:left */
+        span{
+            width: 500px;
+            height: 200px;
+            background-color: blue;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+
+    <span>11111111</span>
+</body>
+</html>

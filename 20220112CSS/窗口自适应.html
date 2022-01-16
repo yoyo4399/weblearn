@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 盒子是相对于body来说的100%，而body此时并没有高度，因此高度无法自适应，不能显示盒子 */
+        .box{
+            width: 100%;
+            height: 100%;
+            background-color: green;
+        }
+        /* html，body的高度是相对于窗口来说的，因此定义了窗口高度，此时上面代码的盒子会显示 */
+        html,body{
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

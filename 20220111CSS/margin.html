@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+        }
+        .box1{
+            background-color: orange;
+            /* float: left; */
+            margin: 40px;
+        }
+        .box2{
+            background-color: green;
+            margin: 50px;
+        }
+        /* 
+        1.居中方案：margin:0 auto 横向居中
+        2.外边框支持负值；
+        3.背景色不蔓延
+        4.外边框支持四个方向：margin- 
+        */
+        /* 
+        margin特性1：
+        两个兄弟盒子垂直方向外边框会取最大值；水平方向外边框距离会合并
+        margin特性2：
+        两个父子盒子，子盒子边框距离会作用在父盒子上，如何解决：
+        1.子margin-top==>父padding-top,注意高度计算；
+        2.给父盒子设置边框；
+        3.子盒子或父盒子浮动；
+        4.父盒子加上overflow:hidden
+        */
+        .box3{
+            width: 500px;
+            height: 800px;
+            background-color: black;
+            float: left;
+            /* overflow: hidden; */
+        }
+        .box4{
+            background-color: red;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3">
+        <div class="box4"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        .item{
+            width: 300px;
+            height: 25px;
+            margin: 0 auto;
+            background-color: blue
+        }
+        .item .box{
+            float: left;
+            width: 148px;
+            text-align: center;
+            color: white;
+            line-height: 23px;
+            border: blue 1px solid;
+        }
+        .item .box:hover{
+            background: lightblue;
+        }
+        .box ul{
+            color: black;
+        }
+        .box ul{
+            display: none;
+            background-color: white;
+            color: black;
+        }
+        .box:hover ul{
+            display: block;
+        }
+        .box ul li:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul class="item">
+        <li class="box">教学视频
+            <ul>
+                <li>全部视频</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>python</li>
+            </ul>
+        </li>
+        <li class="box">培训认证
+            <ul>
+                <li>红帽</li>
+                <li>PMP</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bbb{
+            border: 1px solid red;
+        } 
+        /* 空格是子代选择器，>是亲子代选择器 */
+        .bbb>li{
+            border: 1px solid red;
+        }
+        /* 兄弟选择器，只能选择后面一个 */
+        .cccc+li{
+            background: red;
+        }
+        /* 兄弟选择器，选择后面的所有亲兄弟，注意不是亲兄弟不选 */
+        .cccc~li{
+            background:green;
+        }
+    </style>
+</head>
+<body>
+    <div class="aaaa">
+        <ul class="bbb">
+            <li>111111
+                <ul>
+                    <li>66666</li>
+                    <li>88888</li>
+                </ul>
+            </li>
+            <li class="cccc">222222</li>
+            <li>333333</li>
+            <li>444444</li>
+        </ul>
+        <div>
+            <ul>
+                <li>555555</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

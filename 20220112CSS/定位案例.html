@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+        width: 500px;
+        height: 500px;
+        /* background-color: yellow; */
+        border: 2px solid red;
+        position: relative;
+        }
+        .flo{
+        width: 100%;
+        height: 100%;  
+        }
+        .search{
+        width: 50px;
+        height: 50px;
+        position:absolute;
+        bottom: 10px;
+        left: 10px;   
+        }
+        .container p{
+            position: absolute;
+            top:10px;
+            left: 10px;
+            color: white;
+            display: none;
+        }
+        .container:hover p{
+            display: block;
+        }
+        .container:hover .flo{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../20220109HTML/img.jpeg" alt="" class="flo">
+        <img src="../20220111CSS/富途牛牛/img/search.png" alt="" class="search">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque totam nam quam minima maiores ipsum cupiditate sunt ex atque? Corporis repellat deserunt dolorum fuga dolore quo deleniti iusto harum reprehenderit.</p>
+    </div>
+</body>
+</html>

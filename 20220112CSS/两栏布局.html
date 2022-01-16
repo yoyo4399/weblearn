@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+        }
+        .box1{
+            width: 100px;
+            height: 100%;
+            background-color: green;
+            float: left;
+        }
+        /* 方案1：空出100px距离 */
+        /* .box2{
+            height: 100%;
+            margin-left: 100px;
+            background-color: yellow;
+        } */
+        /* 方案2：100%窗口-100px 
+        calc函数，要求+ - * /号前后有一个空格*/
+        .box2{
+            height: 100%;
+            width: calc(100% - 100px);
+            background: red;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- 要实现左边窗口不动，右边窗口自适应 -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

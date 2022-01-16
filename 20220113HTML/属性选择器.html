@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div里所有带class属性的,注意两者之间不要带空格，带空格则说明是子代*/
+        div[class]{
+            background-color: green;
+        }
+        /* 属性里为box1的，注意此时是绝对属性选择器 */
+        div[class=box1]{
+            background-color: yellow;
+        }
+        /* 选择属性里包含box1 */
+        div[class~=box1]{
+            background-color: blue;
+        }
+        [type]{
+            background-color: brown;
+        }
+        /* 模糊匹配
+        class^=b:class里面以b开头
+        class$=b:class里面以b结尾
+        class*=b:class里面包含b */
+    </style>
+</head>
+<body>
+    <div class="box1">1111</div>
+    <div class="box2">2222</div>
+    <div class="box1 box2">3333</div>
+    <p class="p1">55555</p>
+    <p class="p2">66666</p>
+    <form action="">
+        <input type="text" name="aa">
+        <input type="radio" name="bb">nihao
+    </form>
+</body>
+</html>

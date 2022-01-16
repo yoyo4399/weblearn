@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            float: left;
+        }
+        .b{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            float: left;
+        }
+        .content{
+            width: 400px;
+            height: 600px;
+            background-color: green;
+        }
+        .content::before{
+            /* 这里一般写空 */
+            content: "aaaaa";
+            clear:both;
+            display: block;
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+        /* 解决高度塌陷：
+        1.在塌陷的盒子后面加上没有东西的div <div style="clear:both">==会降低代码可读性；
+        2.把塌陷的盒子高度写死===东西太多，换行后失效；
+        3.over flow:hidden===溢出隐藏，会将溢出的内容隐藏掉
+        4.最优方法，在前面加伪元素 */
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="a"></div>
+        <div class="b"></div>
+    </div>
+    <div class="content"></div>
+</body>
+</html>

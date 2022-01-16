@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:enabled{
+          background: red;
+        }
+        input:disabled{
+            background-color: blue;
+        }
+        input:focus{
+            background: yellow;
+        }
+        div::selection{
+            background: yellow;
+            color: red;
+        }
+
+        /* 对checkbox改变属性： */
+        div input[type=checkbox]{
+            appearance: none;
+            width: 20px;
+            height: 30px;
+            border: 1px solid red;
+        }
+        .box1:checked{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        用户名<input type="text"><br>
+        密码<input type="password"><br>
+        记住密码<input type="checkbox"><br>
+        <input type="submit" disabled>
+    </form>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illo, distinctio, assumenda iste atque tenetur dolores blanditiis inventore consectetur, ut enim ullam. Vel aut voluptates suscipit officia qui saepe ad!</div>
+    <div class="box1">
+        <input type="checkbox">
+    </div>
+</body>
+</html>

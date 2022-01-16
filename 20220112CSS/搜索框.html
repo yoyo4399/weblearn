@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            width: 80%;
+            height: 50px;
+            background-color: yellow;
+            margin: 0 auto;
+        }
+        ul{
+            width: 400px;
+            height: 20px;
+            list-style: none;
+        }
+        li{
+            float: left;
+            margin-right: 20px;
+            font-size: 14px;
+        }
+        .search{
+            width: 120px;
+            height: 25px;
+            border:1px solid #d1d1d1;
+        }
+        .search .left{
+            border: 0;
+            outline: none;
+            width: 85px;
+            height: 25px;
+            padding-left: 5px;
+            float: left;
+        }
+        .search .right{
+            width: 30px;
+            height:25px;
+            background: url(../20220111CSS/富途牛牛/img/search.png) no-repeat;
+            background-size: 30px 25px;
+            float: right;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a>首页</a></li>
+            <li><a>案例</a></li>
+            <li><a>工具</a></li>
+            <li><a>就业</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="搜索" class="left">
+            <input type="submit" value="" class="right">
+        </div>
+    </div>
+</body>
+</html>

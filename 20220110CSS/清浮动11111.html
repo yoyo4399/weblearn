@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1,.box2{
+            width: 300px;
+            height: 300px;
+        }
+        .box3{
+            width: 500px;
+            height: 400px;
+        }
+        .cont{
+            float: left;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: yellowgreen;
+        }
+        .box3{
+            background-color: blue;
+            clear:both
+        }
+    </style>
+</head>
+<!-- 清浮动：
+1.写固定高度，浮动盒子
+2.清浮动clear:none  可选项：left right none both，放在浮动盒子后面
+3.浮动盒子后补一个盒子，不设置宽高，clear:both
+4.overflow:hidden 放在浮动元素里面-->
+<body>
+    <div class="cont"> 
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <!-- <div style="clear:both;"></div> -->
+    </div>
+    <div class="box3"></div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 25px;
+            background-color: yellow;
+            margin: 0 auto;
+            padding: 10px;
+            line-height: 25px;
+        }
+        /* span标签要设置宽高，必须从内联标签转换成行内标签 */
+        span{
+            width: 0;
+            height: 0;
+            display: inline-block;
+            border: 5px solid transparent;
+            border-top:5px solid black;
+            position: relative;
+            top:2.5px
+        }
+        div:hover span{
+            border: 5px solid transparent;
+            border-bottom:5px solid black;
+            position: relative;
+            top:-2.5px;
+        }
+    </style>
+</head>
+<body>
+    <div>导航
+        <span></span>
+    </div>
+</body>
+</html>

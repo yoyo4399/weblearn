@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 300px;
+            background: burlywood;
+            margin: 0 auto;
+            display: flex;
+        }
+        .box1 div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 2px dotted black;
+        }
+        .box1 span{
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: auto;
+        }
+    </style>
+    <!-- 变成弹性盒的影响（适合移动端）：
+    1.子元素默认横向排列；
+    2.span等行内元素变成块元素，可以设置宽高；
+    3.只有一个子元素时，margin:auto可以实现水平垂直都居中 -->
+</head>
+<body>
+    <div class="box1">
+        <div>1111</div>
+        <div>2222</div>
+        <div>3333</div>
+    </div>
+    <div class="box1">
+        <span>aaaaaa</span>
+        <span>aaaaaa</span>
+        <span>aaaaaa</span>
+    </div>
+</body>
+</html>
